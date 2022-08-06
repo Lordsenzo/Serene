@@ -1,0 +1,627 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Nav-Bar Styling */
+.one{
+    height: 60px;
+    width: 100%;
+    background-color:  purple;
+    
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 17px;
+    border-top: gold 4px ridge;
+    border-bottom: gold 3px ridge;
+    z-index: 5;
+}
+
+.harmburger{
+    display: none;
+}
+/* Nav-Bar Header Styling */
+.one h3{
+    /* background-color: black; */
+    color: gold;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.one h3 span{
+    font-style: italic;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+/* Nav-Bar List Styling */
+.one ul li{
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-left: 40px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.one ul li span{
+    position: relative;
+}
+
+.one li span::before{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: goldenrod;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.one li span:hover::before{
+    width: 100%;
+    color: #000;
+}
+/* Nav-Bar Link Styling */
+.one a{
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.one a:hover{
+    color: white;
+}
+.active{
+    color: white!important;
+    
+}
+.active::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: goldenrod;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+/* Home Section Styling */
+/* WELCOME */
+.two header{
+    height: 100px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: gold;
+}
+/* YOUR EVENTS MADE EASY */
+.two div {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.two h1{
+    width: 100%;
+    margin: auto;
+    color: rgb(250, 52, 52);
+    margin-top: 50px;
+    font-size: 280%;
+    font-weight: lighter;
+    font-style: italic;
+    margin-left: 2%;
+}
+.two h1 span{
+    display: block;
+    margin-left: 25%;
+    margin-top: 15px;
+}
+/* MADE EASY IMAGE */
+.two img {
+    width: 50%;
+    height: 40%;
+}
+/* About Section Styling */
+/* ABOUT */
+.three{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-style: ridge;
+    border-color: goldenrod;
+    border-width: 3px;
+}
+/* PICTURE FOR ABOUT */
+.three img{
+    height: 400px;
+    width: 300px;
+    margin-right: 5%;
+}
+
+.three h2{
+    margin-right: 50px;
+    color: goldenrod;
+    z-index: -1;
+}
+.three h2::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: goldenrod;
+    display: block;
+    transition: 3s;
+}
+
+.three div{
+    margin-left: 5%;
+    
+}
+.three p{
+    color: rgb(189, 161, 1);
+    margin-top: 10px;
+    line-height: 1.5em;
+    text-align: justify;
+    margin-right: 50px;
+    line-height: 40px;
+    word-spacing: 8px;
+}
+/* Services Section Styling */
+/* FEATURED SERVICES */
+.four{
+    border-bottom: goldenrod 3px ridge;
+}
+.four .four1{
+    width: 95vmin;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.four .four1 h2{
+    color: goldenrod;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.four .four1 button{
+    margin-top: 10px;
+    border: none;
+    background: transparent;
+}
+.four .four1 a{
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 20px;
+}
+.four .four1 a span{
+    font-weight: bold;
+    font-size: 25px;
+}
+/* FEATUERD SERVICES IMAGE */
+.four img{
+    margin-left: 50px;
+    margin-top: 10px;
+    height: 60%;
+    width: 80%;
+}
+/* LET'S HAVE A CONVERSATION */
+.five{
+    height: auto;
+    text-align: center;
+    background-color: purple;
+    padding-top: 50px;
+}
+.five p{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+.five p span {
+    color: gold;
+    display: block;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 20px;
+}
+/* OUR CREATION BEGINS HERE */
+.five div {
+    margin-top: 30px;
+    color: gold;
+    letter-spacing: 1px;
+}
+.five div::after{
+    content:'';
+    height: 70px;
+    width: 1.5px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+}
+/* WHAT ARE YOUR DESIRES - BUTTON */
+.five button{
+    margin-top: 60px;
+    margin-bottom: 8%;
+    padding-top: 15px;
+    width: 300px;
+    height: 60px;
+    background: transparent;
+    border: white 1.5px solid;
+    animation: wisdom 5s ease 3s;
+    transform: translateY(-120px) ;
+
+}
+@keyframes wisdom {
+    0% {
+        
+    }
+}
+.five button a{
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+
+/* FOOTER STYLING */
+.footer{
+    color: goldenrod;
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+}
+/* FOOTER - SERENE SOLUTIONS */
+.footer h1{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 100;
+}
+.footer h5{
+    font-weight: normal;
+    text-align: center;
+    margin-top: 10px;
+}
+.footer ul{
+    margin-top: 40px;
+}
+.footer li{
+    list-style: none;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+.footer li a{
+    text-decoration: none;
+    color: goldenrod;
+}
+/* FOOTER - LOGO STYLING */
+.footer h2{
+    text-align: center;
+}
+.footer div h2 button{
+
+    color: gold;
+    display: inline;
+    border: gold 2px solid;
+    background-color: purple;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-style: italic;
+    position: relative;
+}
+.footer div h2 button span {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    bottom: 5px;
+    left: 8px;
+    
+}
+
+
+/* COPYRIGHT */
+.copyright{
+    background-color: purple;
+    color: gold;
+    height: auto;
+    font-size: 12px;
+    word-spacing: 5px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+    letter-spacing: 2px;
+}
+
+/* CONTACT - LET'S HEAR YOU */
+.contact{
+    height: 350px;
+    color: gold;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 3px;
+    background-color: purple;
+    text-align: center;
+    padding-top: 150px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contact span{
+    display: block;
+    margin-top: 5px;
+    
+}
+.contact1{
+    color: goldenrod;
+    text-align: center;
+    margin-top: 10px;
+}
+.contact1 h5{
+    margin-top: 40px;
+
+}
+.contact1 p img {
+    height: 15px;
+    width: 15px;
+}
+
+.contact2{
+    margin-top: 10px;
+    padding-top: 30px;
+    background-color: purple;
+    color: goldenrod;
+    text-align: center;
+    z-index: -5;
+}
+/* CONTACT US */
+.contact2 h3{
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+/* FORM ACTION */
+.contact2 .content input{
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    width: 450px;
+    height: 50px;
+    
+}
+.contact2 .content input ::shadow{
+    border: none;
+}
+.name div{
+    position: relative;
+    
+}
+.name div span{
+    padding-left: 5px;
+    padding-top: 15px;
+    position: absolute;
+}
+.email div{
+    margin-top: 5px;
+    position: relative;
+}
+.email div span{
+    padding-left: 5px ;
+    padding-top: 15px;
+    position: absolute;
+}
+.phone div{
+    margin-top: 10px;
+    position: relative;
+}
+.phone div span{
+    padding-left: 5px ;
+    padding-top: 15px;
+    position: absolute;
+    color: goldenrod;
+}
+.msg div{
+    margin-top: 10px;
+    position: relative;
+}
+.msg div span{
+    padding-top: 10px;
+    padding-left: 5px;
+    position: absolute;
+}
+.msg textarea {
+    padding-left: 5px;
+    padding-top: 30px;
+}
+.contact2 button{
+    color: white;
+    background-color: orangered;
+    width: 140px;
+    height: 33px;
+    border: none;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.contact2 button span{
+    font-size: 20px;
+    padding-left: 8px ;
+}
+
+.service1{
+    color: goldenrod;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.service1 h1{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    letter-spacing: 10px;
+    font-size: 40px;
+    font-weight: lighter;
+}
+.service1 p{
+    margin-top: 20px;
+    word-spacing: 10px;
+    text-align: justify;
+    line-height: 40px;
+}
+
+/* RESPONSIVE MEDIA QUERY START */
+@media(max-width:875px){
+    /* NAVIGATION BAR */
+    .one{
+        padding-top: 10px;
+    }
+    /* Nav-Bar Header Styling */
+    .one h3{
+        padding-top: 8px;
+    }
+    .harmburger{
+        display: block;
+        /* background-color: black; */
+        width: 30px;
+        height: 35px;
+        text-align: center;
+        padding-top: 0px;
+        margin-bottom: 30px;
+    }
+    .harmburger .icon{
+        font-size: xx-large;
+    }
+    
+    .harmburger .icon1 {
+        font-size: xx-large;
+        display: none;
+    }
+    /* .burger-of{
+        display: none;
+    } */
+    .show .icon{
+        display: none;
+    }
+    /* .burger-on{
+        display: block!important;
+    } */
+    .show .icon1{
+        display: block!important;
+    }
+    .one ul{
+        display: none;
+        /* position: absolute;
+        top: 55px;
+        right: 0;
+        /* display: flex; */
+        /* flex-direction: column;
+        background-color: purple;
+        height: auto;
+        width: 50%;
+        padding-bottom: 10%; */
+    }
+    .one ul li{
+        margin-bottom: 0%;
+        margin-top: 15%;
+        text-align: center;
+        margin-left: 0%;
+    }
+    .show .first{
+        display: flex!important;
+        position: absolute;
+        /* position: fixed; */
+        top: 55px;
+        right: 0;
+        /* display: flex; */
+        flex-direction: column;
+        background-color: purple;
+        height: auto;
+        width: 50%;
+        padding-bottom: 10%;
+        transition: all 10s;
+    }
+    /* HOME SECTION STYLING */
+    .two div {
+    display: flex;
+    flex-direction: column;
+}
+.two h1{
+    margin-bottom: 15px;
+}
+/* ABOUT */
+.three{
+    flex-direction: column;
+}
+
+/*  FOOTER*/
+.footer{
+    width: 50vmin;
+}
+/* FOOTER - SERENE SOLUTIONS */
+.footer h1, h5{
+    display: none;
+}
+.footer div h2{
+    transition-delay: 5s;
+}
+.footer div h2::after {
+    content:'';
+    height: 100px;
+    width: 3px;
+    background-color: goldenrod;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    transition: 1s;
+}
+
+.footer div h2:hover::after{
+    height: 0px;
+}
+
+.footer ul{
+    margin-top: 80px;
+}
+.footer ul #float{
+    float: right;
+    margin-bottom: 15px;
+}
+#change {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    /* background-color: violet; */
+}
+/* WELCOME */
+.two header {
+    height: 60px;
+}
+/* MADE EASY IMAGE */
+.two h1{
+    margin-top: 0px;
+}
+.two img {
+    width: 100%;
+    height: 80%;
+}
+}
